@@ -16,7 +16,9 @@ Assume that there are N vaccinated passengers, and M unvaccinated passengers who
 
 <details>
 <summary>My solution in await: </summary>
+    
     ```
+
         sem mutex = 1;
         sem vax = 1;
         sem nonVax = 1;
