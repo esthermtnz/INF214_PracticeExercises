@@ -11,7 +11,7 @@
 <summary>My answer: </summary>
 
 ![alt text](/images/image.png)
-<details>
+</details>
 
 <details>
 <summary> Correct solution: </summary>
@@ -19,4 +19,4 @@
 ![alt text](/images/image-1.png)
 
 ![alt text](/images/image-2.png)
-<details>
+</details>

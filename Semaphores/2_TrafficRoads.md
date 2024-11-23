@@ -14,9 +14,8 @@ There exits an intersection where two main roads Road A and Road B, intersect. T
 <details>
 <summary>My answer in await: </summary>
 
-
     ```
-
+        
     
 
 
