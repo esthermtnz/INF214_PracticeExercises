@@ -24,12 +24,26 @@ Represent the birds as processes and develop pseudo-code in the Await Language t
 <details>
 <summary>My answer in await: </summary>
 
-
     ```
+    monitor BirdFeeding{
+        int portions = F;
+        cond full_dish;
+        cond refill;
+        
+        procedure eatDish(){
+            while (portions == 0) wait (full_dish);
+            portions = portions - 1;
+            if (portions == 0){
+                signal(refill);
+            }
+        }
 
-    
-
-
+        procedure refillDish(){
+            while (portions > 0) wait(refill);
+            portions = F;
+            signal_all(full_dish);
+        }
+    }
 
     ```
 
