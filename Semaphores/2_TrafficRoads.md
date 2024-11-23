@@ -82,7 +82,7 @@ There exits an intersection where two main roads Road A and Road B, intersect. T
 <details>
 <summary>Solution: </summary>
 ```
-sem greenA = 1;
+
     sem greenA = 1; //green light for road A
     sem greenB = 0;
 

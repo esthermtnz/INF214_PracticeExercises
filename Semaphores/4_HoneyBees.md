@@ -15,8 +15,33 @@ synchronization.
 
     ```
 
+    int portions = 0;
+    sem wakeup = 0;
+    sem put_honey = 1;
     
-
+    process Bees[i=1 to N]{
+        while(true){
+            P(put_honey);
+            put_portion();
+            portions++;
+            
+            if(portions == H){
+                V(wakeup);
+            } else{
+                V(put_honey);
+            }
+        }
+    }
+    
+    process Bear{
+        while(true){
+            P(wakeup);
+            eat_honey();
+            portions = 0;
+            V(put_honey);
+            sleep();
+        }
+    }
 
 
     ```
