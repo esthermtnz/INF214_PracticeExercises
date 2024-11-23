@@ -16,57 +16,57 @@ Assume that there are N vaccinated passengers, and M unvaccinated passengers who
 
 <details>
 <summary>My solution in await: </summary>
-```
-sem mutex = 1;
-sem vax = 1;
-sem nonVax = 1;
+    ```
+        sem mutex = 1;
+        sem vax = 1;
+        sem nonVax = 1;
 
-int numV = 0;
-int numNV = 0;
+        int numV = 0;
+        int numNV = 0;
 
 
-process Vaccinated [i=1 to N]{
-    while true(){
+        process Vaccinated [i=1 to N]{
+            while true(){
 
-        P(vax)
-        numV ++;
-        if (numV == 1){
-            P(mutex);
+                P(vax)
+                numV ++;
+                if (numV == 1){
+                    P(mutex);
+                }
+                V(vax)
+
+                doc_checking();
+
+                P(vax);
+                numV --;
+                if (numV == 0){
+                    V(mutex);
+                }
+                V (vax);
+            }
         }
-        V(vax)
 
-        doc_checking();
+        process nonVaccinated [i=1 to N]{
+        while true(){
 
-        P(vax);
-        numV --;
-        if (numV == 0){
-            V(mutex);
+                P(nonVax);
+                numNV ++;
+                if (numNV == 1){
+                    P(mutex);
+                }
+                V(nonVax);
+
+                doc_checking();
+
+                P(nonVax);
+                numNV --;
+                if (numNV == 0){
+                    V(mutex);
+                }
+                V (nonVax);
+            }
         }
-        V (vax);
-    }
-}
-
-process nonVaccinated [i=1 to N]{
-   while true(){
-
-        P(nonVax);
-        numNV ++;
-        if (numNV == 1){
-            P(mutex);
-        }
-        V(nonVax);
-
-        doc_checking();
-
-        P(nonVax);
-        numNV --;
-        if (numNV == 0){
-            V(mutex);
-        }
-        V (nonVax);
-    }
-}
 
 
-```
+    ```
 </details>
