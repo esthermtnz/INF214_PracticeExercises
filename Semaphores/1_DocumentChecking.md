@@ -1,5 +1,4 @@
-
-## Task about semaphores for practicing when preparing for the exam 🛂
+## Document Checking Exercise: Semaphores
 
 Consider Multilandet, which is a country, and Multibyen, which is its capital city.
 The airport of Multibyen has introduced strict entry requirements for arriving passengers because of a global pandemic.
@@ -15,7 +14,7 @@ Assume that there are N vaccinated passengers, and M unvaccinated passengers who
 💡 Your solution need NOT to be fair.
 
 <details>
-<summary>My solution in await: </summary>
+<summary>My answer in await: </summary>
     
     ```
 

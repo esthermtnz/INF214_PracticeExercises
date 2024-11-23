@@ -1,5 +1,4 @@
-
-## Task about semaphores for practicing when preparing for the exam 🛂
+## Traffic Roads Exercise: Semaphores
 
 There exits an intersection where two main roads Road A and Road B, intersect. To manage traffic at this intersection, the city has installed a traffic light system. However, due to the complexity and the high volume of traffic, special rules have been established to ensure a smooth and fair flow of vehicles.
 
@@ -13,14 +12,15 @@ There exits an intersection where two main roads Road A and Road B, intersect. T
 
 
 <details>
-<summary>My solution in await: </summary>
+<summary>My answer in await: </summary>
 
 
     ```
 
-
-
     
+
+
+
     ```
 
 </details>
