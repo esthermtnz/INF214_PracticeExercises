@@ -26,6 +26,7 @@
 <details>
 <summary> Correct solution: </summary>
 
+```
 0 ms - mainline execution starts
 6 ms - user clicks button
 10 ms - Timer fires
@@ -43,6 +44,7 @@ a tiny bit after 18 ms - promise is resolved
 38 ms - intervalHandler execution starts
 40 ms - Interval fires for the 4º time
 46 ms - intervalHandler execution finishes
+```
 
 
 #### Its correct!! Remember to use the name of the code's handlers
