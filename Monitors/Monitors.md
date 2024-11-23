@@ -3,27 +3,28 @@ A savings account is shared by several people (processes). Each person may depos
 
 <details>
 <summary> Correct solution: </summary>
-```
-    monitor Account {
-        int balance = 0;
 
-        cond cv;
+    ```
 
-        procedure deposit(int amount) 
-        {
-            balance = balance + amount;
-            signal_all(cv);
+        monitor Account {
+            int balance = 0;
+
+            cond cv;
+
+            procedure deposit(int amount) 
+            {
+                balance = balance + amount;
+                signal_all(cv);
+            }
+
+            procedure withdraw(int amount) 
+            {   
+                while(balance < amount) wait(cv);
+                balance = balance - amount;
+            }
+
         }
 
-        procedure withdraw(int amount) 
-        {   
-            while(balance < amount) wait(cv);
-            balance = balance - amount;
-        }
-
-    }
-
-
-```
+    ```
 
 </details>
