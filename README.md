@@ -1,3 +1,3 @@
 # EXAM PREPARATION INF214: 24H
 
-![alt text](image.png)
+![alt text](/images/image-5.png)
