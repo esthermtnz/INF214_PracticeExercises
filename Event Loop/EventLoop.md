@@ -23,8 +23,8 @@
 </script>
 
 ```
-
-### My solution:
+<details>
+<summary> Correct solution: </summary>
 
 0 ms - mainline execution starts
 6 ms - user clicks button
@@ -46,3 +46,5 @@ a tiny bit after 18 ms - promise is resolved
 
 
 #### Its correct!! Remember to use the name of the code's handlers
+
+</details>

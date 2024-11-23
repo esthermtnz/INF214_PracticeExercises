@@ -7,9 +7,15 @@
 5:    a.resolve(42); 
 ```
 
-### My answer: 
-![alt text](/images/image-3.png)
+<details>
+<summary>My answer: </summary>
 
-### Solution corrected
+![alt text](/images/image-3.png)
+</details>
+
+<details>
+<summary> Correct solution: </summary>
+
 ![alt text](/images/image-4.png)
+</details>
 

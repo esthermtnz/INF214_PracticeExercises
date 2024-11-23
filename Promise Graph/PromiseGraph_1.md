@@ -7,10 +7,16 @@
 5:   a.reject(42);
 ```
 
-### My answer: 
-![alt text](/images/image.png)
+<details>
+<summary>My answer: </summary>
 
-### Solution corrected
+![alt text](/images/image.png)
+<details>
+
+<details>
+<summary> Correct solution: </summary>
+
 ![alt text](/images/image-1.png)
 
 ![alt text](/images/image-2.png)
+<details>

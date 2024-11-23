@@ -11,8 +11,14 @@ There exits an intersection where two main roads Road A and Road B, intersect. T
 
 -To prevent any one road from monopolizing the intersection, after a set number of vehicles from Road A (say, 5 vehicles), the light will automatically switch to allow vehicles from Road B, even if there are more vehicles waiting on Road A. Similarly, after a set number of vehicles from Road B pass, the light will switch to allow vehicles from Road A.
 
-### My solution in await: 
-````
+
+<details>
+<summary>My solution in await: </summary>
 
 
 ```
+
+
+```
+
+</details>

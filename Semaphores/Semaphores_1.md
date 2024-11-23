@@ -14,8 +14,9 @@ Assume that there are N vaccinated passengers, and M unvaccinated passengers who
 
 💡 Your solution need NOT to be fair.
 
-### My solution in await: 
-````
+<details>
+<summary>My solution in await: </summary>
+```
 sem mutex = 1;
 sem vax = 1;
 sem nonVax = 1;
@@ -68,3 +69,4 @@ process nonVaccinated [i=1 to N]{
 
 
 ```
+</details>
