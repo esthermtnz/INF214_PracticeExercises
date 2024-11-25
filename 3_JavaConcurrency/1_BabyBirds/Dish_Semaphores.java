@@ -18,8 +18,8 @@ public class Dish_Semaphores{
 
     private final int F = 5; //F portions
     private int portions = F;
-    private Semaphore refill = new Semaphore(1);
-    private Semaphore mutex = new Semaphore(0);
+    private Semaphore refill = new Semaphore(0);
+    private Semaphore mutex = new Semaphore(1);
 
 
 
