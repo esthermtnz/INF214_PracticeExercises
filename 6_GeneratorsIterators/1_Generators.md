@@ -1,6 +1,7 @@
 ## Generators & Iterators : Exercise 1
 
 ### What would the value of p be in each step ?
+```
 
 function *g() {
     yield “A”;
@@ -12,6 +13,7 @@ const p = g();
 const r1 = p.next();
 const r2 = p.next();
 const r3 = p.next();
+```
 
 <details>
 <summary> Solution: </summary>

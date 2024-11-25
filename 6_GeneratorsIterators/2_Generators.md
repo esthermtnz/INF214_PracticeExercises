@@ -2,6 +2,8 @@
 
 ### What would the value of p be in each step ?
 
+```
+
 function *g(x) {
     yield “Hi ” + x;
     return “Hello ” + x;
@@ -10,6 +12,7 @@ function *g(x) {
 const p = g(“person”);
 const result1 = p.next();
 const result2 = p.next();
+```
 
 <details>
 <summary> Solution: </summary>
