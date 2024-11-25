@@ -19,19 +19,19 @@ public class Dish_Semaphores{
     private final int F = 5; //F portions
     private int portions = F;
     private Semaphore refill = new Semaphore(1);
-    private Semaphore eat = new Semaphore(1);
+    private Semaphore mutex = new Semaphore(0);
 
 
 
     public void eatPortion() throws InterruptedException {
         
-        eat.acquire();
+        mutex.acquire();
         portions --;
         System.out.println(Thread.currentThread().getName() + " ate a portion. Portions remaining: " + portions);
         if(portions == 0){
             refill.release();
         }else{
-            eat.release();
+            mutex.release();
         }
         
     }
@@ -41,7 +41,7 @@ public class Dish_Semaphores{
         refill.acquire();
         portions = F;
         System.out.println("Parent bird filled the dish with " + F + " portions.");
-        eat.release();
+        mutex.release();
         
     }
 
