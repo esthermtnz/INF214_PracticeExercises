@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.Lock;
 
-public class Dish{
+public class Dish_ConditionReentrant{
 
     private final int F = 5; //F portions
     private int portions = F;
@@ -39,7 +39,7 @@ public class Dish{
 
     /* -------------------MAIN------------------ */
     public static void main(String[] args) {
-        Dish dish = new Dish();
+        Dish_ConditionReentrant dish = new Dish_ConditionReentrant();
 
         // Thread for Parent Bird
         Thread parentBird = new Thread(() -> {
