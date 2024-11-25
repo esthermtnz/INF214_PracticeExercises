@@ -17,6 +17,7 @@ oc
 
 <details>
 <summary> Solution: </summary>
-    Yes it will terminate eventually, because if it is strongly fair we assume that can_proceed = true will be *infinitely often true*, allowing the process 
-    `<await (can_proceed) should_continue = false;>` to be executed.
+
+Yes it will terminate eventually, because if it is strongly fair we assume that can_proceed = true will be **infinitely often true**, allowing the process 
+`<await (can_proceed) should_continue = false;>` to be executed.
 </details>
